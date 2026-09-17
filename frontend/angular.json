@@ -1,0 +1,44 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "parking-garage-frontend": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/parking-garage-frontend",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "tsConfig": "tsconfig.app.json",
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": { "outputHashing": "all" },
+            "development": { "optimization": false, "sourceMap": true }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": { "buildTarget": "parking-garage-frontend:build:production" },
+            "development": { "buildTarget": "parking-garage-frontend:build:development" }
+          },
+          "defaultConfiguration": "development",
+          "options": { "port": 4200 }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "b40d1923-4916-44b3-982d-0175728cccae"
+  }
+}

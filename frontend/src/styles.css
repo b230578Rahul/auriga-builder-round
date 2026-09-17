@@ -1,0 +1,45 @@
+:root {
+  --brand-primary: #1e3a5f;
+  --brand-accent: #ff9f1c;
+  --brand-ev: #2ecc71;
+}
+
+body {
+  background-color: #f4f6f9;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.btn-brand {
+  background-color: var(--brand-primary);
+  color: #fff;
+}
+.btn-brand:hover { background-color: #16293f; color: #fff; }
+
+.spot-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 6px;
+  border-radius: 8px;
+  font-size: .8rem;
+  font-weight: 600;
+}
+.spot-free { background-color: #e6f7ee; color: #1e7e42; border: 1px solid #b7e6c9; }
+.spot-occupied { background-color: #fdeaea; color: #b02a2a; border: 1px solid #f3bcbc; }
+.spot-ev { border-left: 4px solid var(--brand-ev); }
+
+.card-stat {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  color: #fff;
+}
