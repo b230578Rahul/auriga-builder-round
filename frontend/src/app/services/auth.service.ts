@@ -4,7 +4,7 @@ import { Observable, tap } from 'rxjs';
 import { Router } from '@angular/router';
 import { AuthResponse } from '../models/models';
 
-const API_BASE = 'http://localhost:8080/api/auth';
+const API_BASE = 'https://humble-chainsaw-6v59j7v5gp4w2r574-8080.app.github.dev/api/auth';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {

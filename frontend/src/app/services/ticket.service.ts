@@ -3,7 +3,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CheckInRequest, CheckOutRequest, PageResponse, TicketResponse } from '../models/models';
 
-const API_BASE = 'http://localhost:8080/api/tickets';
+const API_BASE = 'https://humble-chainsaw-6v59j7v5gp4w2r574-8080.app.github.dev/api/tickets';
 
 @Injectable({ providedIn: 'root' })
 export class TicketService {

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { SpotAvailabilityResponse, SpotResponse } from '../models/models';
 
-const API_BASE = 'http://localhost:8080/api/spots';
+const API_BASE = 'https://humble-chainsaw-6v59j7v5gp4w2r574-8080.app.github.dev/api/spots';
 
 @Injectable({ providedIn: 'root' })
 export class SpotService {
